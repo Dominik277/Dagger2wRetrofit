@@ -1,4 +1,7 @@
 package DI.qualifier;
 
-public interface ApplicationContext {
+import javax.inject.Qualifier;
+
+@Qualifier
+public @interface ApplicationContext {
 }
