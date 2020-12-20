@@ -9,15 +9,18 @@ import retrofit.APIIinterface;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+//@Module --> s ovom anotacijom se oznacavaju sve klase koje se nalaze unutar object graph-a
 @Module
 public class RetrofitModule {
 
+    //@Provide --> s ovom anotacijom se oznacavaju metode koje se nalaze unutar @Module klasa
     @Provides
     @ApplicationScope
     APIIinterface getApiInterface(Retrofit retroFit){
         return retroFit.create(APIIinterface.class);
     }
 
+    //@Provide --> s ovom anotacijom se oznacavaju metode koje se nalaze unutar @Module klasa
     @Provides
     @ApplicationScope
     Retrofit getRetrofit(OkHttpClient okHttpClient){
@@ -28,6 +31,7 @@ public class RetrofitModule {
                 .build();
     }
 
+    //@Provide --> s ovom anotacijom se oznacavaju metode koje se nalaze unutar @Module klasa
     @Provides
     @ApplicationScope
     OkHttpClient getOkHttpClient(HttpLoggingInterceptor httpLoggingInterceptor){
@@ -36,6 +40,7 @@ public class RetrofitModule {
                 .build();
     }
 
+    //@Provide --> s ovom anotacijom se oznacavaju metode koje se nalaze unutar @Module klasa
     @Provides
     @ApplicationScope
     HttpLoggingInterceptor getHttpLoggingInterceptor(){
