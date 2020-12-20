@@ -1,4 +1,6 @@
 package adapter;
 
-public class RecyclerViewAdapter {
+import androidx.recyclerview.widget.RecyclerView;
+
+public class RecyclerViewAdapter extends RecyclerView.Adapter {
 }
