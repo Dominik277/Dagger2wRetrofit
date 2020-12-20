@@ -8,6 +8,8 @@ import dagger.Module;
 import dagger.Provides;
 import ui.MainActivity;
 
+//Dagger upravalja dependency graph-om sa klasama koje u sebi imaju anotacije @inject i @Provides
+//Dagger ne moze instacirati ili "inject" klase koje nemaju @inject ili @Provide anotaciju
 //@Module --> s ovom anotacijom se oznacavaju klase koje se nalaze unutar object graph-a
 @Module
 public class MainActivityContextModule {
