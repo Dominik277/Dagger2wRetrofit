@@ -7,7 +7,7 @@ import android.widget.TextView;
 import javax.inject.Inject;
 
 import DI.component.ApplicationComponent;
-import DI.component.DetailActivityComponent;
+import DI.component.DaggerDetailActivityComponent;
 import DI.qualifier.ApplicationContext;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +19,7 @@ import retrofit2.Response;
 
 public class DetailActivity extends AppCompatActivity {
 
-    DetailActivityComponent detailActivityComponent;
+    DaggerDetailActivityComponent detailActivityComponent;
 
     @Inject
     public APIIinterface apiIinterface;

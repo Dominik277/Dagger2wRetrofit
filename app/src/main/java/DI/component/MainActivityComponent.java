@@ -9,7 +9,7 @@ import dagger.Component;
 import ui.MainActivity;
 
 @ApplicationScope
-@Component(modules = AdapterModule.class,dependencies = ApplicationComponent.class)
+@Component(modules = AdapterModule.class, dependencies = ApplicationComponent.class)
 public interface MainActivityComponent {
 
     @ActivityContext

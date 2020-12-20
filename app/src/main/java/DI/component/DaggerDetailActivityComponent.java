@@ -6,7 +6,7 @@ import ui.DetailActivity;
 
 @Component(dependencies = ApplicationComponent.class)
 @ActivityScope
-public interface DetailActivityComponent {
+public interface DaggerDetailActivityComponent {
 
     void inject(DetailActivity detailActivity);
 
